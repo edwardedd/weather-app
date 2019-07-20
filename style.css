@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #E56EF4;
+}
+
+.location {
+  height: 30vh;
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+}
+
+.degree_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.temp_degree {
+  font-size: 30px;
+}
+
+.celcium {
+  font-size: 30px;
+  margin-left: 10px;
+}
+
+.description {
+  text-align: center;
+}
