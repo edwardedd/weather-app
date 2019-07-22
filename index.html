@@ -10,12 +10,24 @@
     <h1 class="location_zone">Timezone</h1>
     <p>Icon</p>
   </div>
+  <input type="text" id="name_city" placeholder="Введіть назву міста">
+  <div>
+    <button onclick="weatherBallon()">GO!</button>
+  </div>
   <div class="temperature">
     <div class="degree_wrapper">
-      <h2 class="temp_degree">26</h2>
-      <div class="celcium">C</div>
+      <div class="temp_degree"></div>
+      <div class="celcium">
+        <img id="wicon" src="" alt="Weather icon">
+      </div>
     </div>
     <div class="description">як казав класик: <br/>"Нехай проблеми та негоди не роблять Вам в житті погоди!"</div>
+  </div>
+  <!-- <div class="bg"></div>
+  <div>
+    <div id="description"></div>
+    <h1 id="temp"></h1>
+    <div id="location"></div> -->
   </div>
   <script src="weather.js"></script>
 </body>
