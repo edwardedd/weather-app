@@ -3,32 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="style.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+ <script src="jquery.easy-autocomplete.min.js"></script>
   <title>weather</title>
 </head>
 <body>
+
   <div class="location">
-    <h1 class="location_zone">Timezone</h1>
-    <p>Icon</p>
+    <h1 class="location_zone">Weather in Lviv. Or enter a name of another city</h1>
+    
   </div>
-  <input type="text" id="name_city" placeholder="Введіть назву міста">
-  <div>
-    <button onclick="weatherBallon()">GO!</button>
-  </div>
-  <div class="temperature">
-    <div class="degree_wrapper">
-      <div class="temp_degree"></div>
-      <div class="celcium">
-        <img id="wicon" src="" alt="Weather icon">
+
+  <div class="bottom_wrapper">
+    <div class="input_wrapper">
+      <input type="text" id="name_city" value ="lviv" placeholder="Введіть назву міста">
+      
+      <button onclick="weatherBallon()">GO!</button>
+      <ul id="result"></ul>
+    </div>
+    <div class="temperature">
+      <div class="degree_wrapper">
+        <div class="temp_degree"></div>
+        <img id="wicon" src="" alt="">
+        <div class="wind"> </div>
+          
+       
+      </div>
+      <div class="marquee">
+        <div class="description">як казав класик: "Нехай проблеми та негоди не роблять Вам в житті погоди!"</div>
       </div>
     </div>
-    <div class="description">як казав класик: <br/>"Нехай проблеми та негоди не роблять Вам в житті погоди!"</div>
   </div>
   <!-- <div class="bg"></div>
   <div>
     <div id="description"></div>
     <h1 id="temp"></h1>
-    <div id="location"></div> -->
-  </div>
+    <div id="location"></div> 
+  </div>-->
   <script src="weather.js"></script>
+  <script src="data.json"></script>
 </body>
 </html>
